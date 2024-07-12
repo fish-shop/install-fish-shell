@@ -1,0 +1,19 @@
+name: 'fish-shop/install-fish-shell'
+description: 'A GitHub action for installing fish shell'
+branding:
+  icon: 'arrow-down'
+  color: 'green'
+runs:
+  using: 'composite'
+  steps:
+    - name: Install fish shell for macOS
+      if: runner.os == 'macOS'
+      run: brew install fish
+      shell: bash
+    - name: Install fish shell for Linux
+      if: runner.os == 'Linux'
+      run: |
+        sudo apt-add-repository --yes --no-update ppa:fish-shell/release-3
+        sudo apt-get update --quiet=2
+        sudo apt-get install --yes fish
+      shell: bash

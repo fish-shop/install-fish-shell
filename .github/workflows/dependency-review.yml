@@ -1,0 +1,8 @@
+name: dependency-review
+on:
+  pull_request:
+    branches:
+      - main
+jobs:
+  dependency-review:
+    uses: fish-shop/workflows/.github/workflows/dependency-review.yml@f4dbe1b37c560fa9fb5abbac779829ecc86b7fe4 # v1.4.0

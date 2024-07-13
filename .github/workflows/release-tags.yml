@@ -5,4 +5,4 @@ on:
       - v[0-9]+.[0-9]+.[0-9]+
 jobs:
   release-tags:
-    uses: fish-shop/workflows/.github/workflows/release-tags.yml@f4dbe1b37c560fa9fb5abbac779829ecc86b7fe4 # v1.4.0
+    uses: fish-shop/workflows/.github/workflows/release-tags.yml@7d07ec34167ad8709a9d12c7f4814fa771b62a81 # v1.8.0

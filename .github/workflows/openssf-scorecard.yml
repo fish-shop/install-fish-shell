@@ -1,0 +1,42 @@
+name: OpenSSF Scorecard analysis
+on:
+  branch_protection_rule:
+  schedule:
+    - cron: '0 3 * * 1'
+  push:
+    branches: [ "main" ]
+
+permissions: read-all
+
+jobs:
+  analysis:
+    name: OpenSSF Scorecard analysis
+    runs-on: ubuntu-latest
+    permissions:
+      security-events: write # Needed to upload the results to code scanning dashboard
+      id-token: write # Needed to publish results to OpenSSF API and get a badge (see publish_results below)
+    steps:
+      - name: Harden runner
+        uses: step-security/harden-runner@17d0e2bd7d51742c71671bd19fa12bdc9d40a3d6 # v2.8.1
+        with:
+          egress-policy: audit
+      - name: Checkout repository
+        uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
+        with:
+          persist-credentials: false
+      - name: Run analysis
+        uses: ossf/scorecard-action@dc50aa9510b46c811795eb24b2f1ba02a914e534 # v2.3.3
+        with:
+          results_file: results.sarif
+          results_format: sarif
+          publish_results: true
+      - name: Upload Actions artifact
+        uses: actions/upload-artifact@0b2256b8c012f0828dc542b3febcab082c67f72b # v4.3.4
+        with:
+          name: SARIF file
+          path: results.sarif
+          retention-days: 5
+      - name: Upload to code scanning dashboard
+        uses: github/codeql-action/upload-sarif@4fa2a7953630fd2f3fb380f21be14ede0169dd4f # v3.25.12
+        with:
+          sarif_file: results.sarif

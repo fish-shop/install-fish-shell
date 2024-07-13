@@ -18,7 +18,7 @@ This action has a few dependencies that are generally satisfied by most [GitHub-
 
 ## Usage
 
-Add a suitable `uses` step to your GitHub [workflow](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions) and specify the plugin manager and plugin(s) to be installed by providing values for the `plugin-manager` and `plugins` inputs respectively:
+Add a suitable `uses` step to your GitHub [workflow](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions):
 
 ```yaml
 jobs:

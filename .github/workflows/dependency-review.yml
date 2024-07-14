@@ -5,4 +5,4 @@ on:
       - main
 jobs:
   dependency-review:
-    uses: fish-shop/workflows/.github/workflows/dependency-review.yml@0d032d552619809e6c6e8480c63e1ef0110c5f25 # v1.9.1
+    uses: fish-shop/workflows/.github/workflows/dependency-review.yml@b2aac444bc73a71eefab3eca22225e1f2e2d5727 # v1.9.2

@@ -3,6 +3,11 @@ on:
   pull_request:
     branches:
       - main
+
+permissions: read-all
+
 jobs:
   dependency-review:
+    permissions:
+      pull-requests: write
     uses: fish-shop/workflows/.github/workflows/dependency-review.yml@b2aac444bc73a71eefab3eca22225e1f2e2d5727 # v1.9.2

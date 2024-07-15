@@ -12,6 +12,9 @@ on:
   schedule:
     - cron: '30 19 * * *'
   workflow_dispatch:
+
+permissions: read-all
+
 jobs:
   tests:
     strategy:

@@ -7,4 +7,13 @@ updates:
     assignees:
       - "marcransome"
     reviewers:
-      - "marcransome"
+      - "fish-shop/maintainers"
+    groups:
+      version-updates:
+        applies-to: "version-updates"
+        patterns:
+          - "*"
+      security-updates:
+        applies-to: "security-updates"
+        patterns:
+          - "*"

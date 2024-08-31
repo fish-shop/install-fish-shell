@@ -2,9 +2,9 @@
 
 ## Supported Versions
 
-Patches for security vulnerabilities will be made available at the earliest opportunity. The versions that are eligible for such patches depend on the [CVSS v4.0](https://www.first.org/cvss/v4-0/) severity rating:
+Patches for security vulnerabilities will be made available at the earliest opportunity. The versions that are eligible for such patches depend on the [CVSS v3.1](https://www.first.org/cvss/v3.1/) severity rating:
 
-| CVSS v4.0 | Supported Versions                        |
+| CVSS v3.1 | Supported Versions                        |
 | --------- | ----------------------------------------- |
 | 9.0-10.0  | Releases within the previous three months |
 | 4.0-8.9   | Most recent release                       |

@@ -2,7 +2,7 @@
 
 # fish-shop/install-fish-shell
 
-[![Tests](https://img.shields.io/github/actions/workflow/status/fish-shop/install-fish-shell/test.yml?branch=main&color=brightgreen&label=tests)](https://github.com/fish-shop/install-fish-shell/actions) [![Issues](https://img.shields.io/github/issues/fish-shop/install-fish-shell)](https://github.com/fish-shop/install-fish-shell/issues) [![Dependabot](https://img.shields.io/badge/dependabot-active-brightgreen.svg)](https://github.com/fish-shop/install-fish-shell/network/dependencies) [![License](https://img.shields.io/badge/license-MIT-blue)](https://opensource.org/licenses/mit-license.php) [![fish](https://img.shields.io/badge/fish-3.2.2-blue)](https://fishshell.com)
+[![OpenSSF Scorecard](https://img.shields.io/ossf-scorecard/github.com/fish-shop/install-fish-shell?label=OpenSSF%20Scorecard)](https://securityscorecards.dev/viewer/?uri=github.com/fish-shop/install-fish-shell) [![Tests](https://img.shields.io/github/actions/workflow/status/fish-shop/install-fish-shell/test.yml?branch=main&color=brightgreen&label=tests)](https://github.com/fish-shop/install-fish-shell/actions) [![Issues](https://img.shields.io/github/issues/fish-shop/install-fish-shell)](https://github.com/fish-shop/install-fish-shell/issues) [![Dependabot](https://img.shields.io/badge/dependabot-active-brightgreen.svg)](https://github.com/fish-shop/install-fish-shell/network/dependencies) [![License](https://img.shields.io/badge/license-MIT-blue)](https://opensource.org/licenses/mit-license.php) [![fish](https://img.shields.io/badge/fish-3.2.2-blue)](https://fishshell.com)
 
 A GitHub action for installing [fish shell](https://fishshell.com).
 

@@ -1,0 +1,19 @@
+name: codeql-analysis
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  schedule:
+    - cron: '00 18 * * 1'
+  workflow_dispatch:
+
+permissions: read-all
+
+jobs:
+  analyze-actions:
+    permissions:
+      security-events: write
+    uses: fish-shop/workflows/.github/workflows/codeql-analysis.yml@10c7ae384c1c98898c1bbe85afd15e7eaa0c3eb9 # v1.11.0

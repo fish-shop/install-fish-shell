@@ -10,4 +10,4 @@ jobs:
   dependency-review:
     permissions:
       pull-requests: write
-    uses: fish-shop/workflows/.github/workflows/dependency-review.yml@e0b46a2b2a2eeb72c2defc13a83d7c3382105d20 # v1.11.6
+    uses: fish-shop/workflows/.github/workflows/dependency-review.yml@f39b54cdf42badfb9d93d8d887c3315230ed82cf # v1.11.7

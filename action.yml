@@ -13,7 +13,7 @@ runs:
     - name: Install fish shell for Linux
       if: runner.os == 'Linux'
       run: |
-        sudo apt-add-repository --yes --no-update ppa:fish-shell/release-3
+        sudo apt-add-repository --yes --no-update ppa:fish-shell/release-4
         sudo apt-get update --quiet=2
         sudo apt-get install --yes fish
       shell: bash

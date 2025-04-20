@@ -32,5 +32,6 @@ jobs:
       - name: Install fish shell
         uses: ./
       - name: Check fish shell installed
-        run: command -V fish
-        shell: bash
+        run: |
+          command -V fish
+          fish --version

@@ -14,3 +14,4 @@ jobs:
     permissions:
       pull-requests: write
     uses: fish-shop/workflows/.github/workflows/gitleaks.yml@9063758be54c714754072cbc1e8c57ad6544d7e4 # v1.12.1
+    secrets: inherit

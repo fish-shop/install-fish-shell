@@ -1,4 +1,4 @@
-name: gitleaks
+name: Gitleaks SAST scan
 on:
   pull_request:
     branches:
@@ -11,7 +11,9 @@ permissions: read-all
 
 jobs:
   gitleaks:
+    name: Gitleaks SAST scan
     permissions:
       pull-requests: write
-    uses: fish-shop/workflows/.github/workflows/gitleaks.yml@9063758be54c714754072cbc1e8c57ad6544d7e4 # v1.12.1
-    secrets: inherit
+    uses: fish-shop/workflows/.github/workflows/gitleaks.yml@250349a8784f13d28a549821c0abae0a1d2d9e67 # v1.13.3
+    secrets:
+      gitleaks_license: ${secrets.GITLEAKS_LICENSE}

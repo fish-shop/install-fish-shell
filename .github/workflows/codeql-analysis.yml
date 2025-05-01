@@ -1,4 +1,4 @@
-name: codeql-analysis
+name: CodeQL Analysis
 on:
   push:
     branches:
@@ -14,6 +14,7 @@ permissions: read-all
 
 jobs:
   analyze-actions:
+    name: CodeQL Analysis
     permissions:
       security-events: write
-    uses: fish-shop/workflows/.github/workflows/codeql-analysis.yml@9063758be54c714754072cbc1e8c57ad6544d7e4 # v1.12.1
+    uses: fish-shop/workflows/.github/workflows/codeql-analysis.yml@250349a8784f13d28a549821c0abae0a1d2d9e67 # v1.13.3

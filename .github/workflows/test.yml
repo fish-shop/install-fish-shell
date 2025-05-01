@@ -1,4 +1,4 @@
-name: tests
+name: Action Tests
 on:
   push:
     branches:
@@ -17,6 +17,7 @@ permissions: read-all
 
 jobs:
   tests:
+    name: Action Tests
     strategy:
       matrix:
         os:

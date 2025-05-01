@@ -1,4 +1,4 @@
-name: release-tags
+name: Release Tags
 on:
   push:
     tags:
@@ -8,6 +8,7 @@ permissions: read-all
 
 jobs:
   release-tags:
+    name: Release Tags
     permissions:
       contents: write
-    uses: fish-shop/workflows/.github/workflows/release-tags.yml@9063758be54c714754072cbc1e8c57ad6544d7e4 # v1.12.1
+    uses: fish-shop/workflows/.github/workflows/release-tags.yml@250349a8784f13d28a549821c0abae0a1d2d9e67 # v1.13.3

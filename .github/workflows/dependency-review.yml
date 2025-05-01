@@ -1,4 +1,4 @@
-name: dependency-review
+name: Dependency Review
 on:
   pull_request:
     branches:
@@ -8,6 +8,7 @@ permissions: read-all
 
 jobs:
   dependency-review:
+    name: Dependency Review
     permissions:
       pull-requests: write
-    uses: fish-shop/workflows/.github/workflows/dependency-review.yml@9063758be54c714754072cbc1e8c57ad6544d7e4 # v1.12.1
+    uses: fish-shop/workflows/.github/workflows/dependency-review.yml@250349a8784f13d28a549821c0abae0a1d2d9e67 # v1.13.3

@@ -11,7 +11,6 @@ permissions: read-all
 jobs:
   analysis:
     name: OpenSSF Scorecard Analysis
-    runs-on: ubuntu-latest
     permissions:
       security-events: write # Needed to upload the results to code scanning dashboard
       id-token: write # Needed to publish results to OpenSSF API and get a badge

@@ -14,6 +14,6 @@ jobs:
     name: Gitleaks SAST scan
     permissions:
       pull-requests: write
-    uses: fish-shop/workflows/.github/workflows/gitleaks.yml@8812ecb78fcbe09bd38dc2ffd3e43b2559fcdf10 # v1.13.10
+    uses: fish-shop/workflows/.github/workflows/gitleaks.yml@833714dfc469944effb4dc20e5589fbecbe8aa2a # v1.13.11
     secrets:
       gitleaks_license: ${secrets.GITLEAKS_LICENSE}

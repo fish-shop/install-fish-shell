@@ -26,7 +26,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Install fish shell
-        uses: fish-shop/install-fish-shell@v1
+        uses: fish-shop/install-fish-shell@v2
 ```
 
 ## Action versions

@@ -14,4 +14,4 @@ jobs:
     permissions:
       security-events: write # Needed to upload the results to code scanning dashboard
       id-token: write # Needed to publish results to OpenSSF API and get a badge
-    uses: fish-shop/workflows/.github/workflows/openssf-scorecard.yml@c398c241243d9abf13d094e622211ea3692bf1b6 # v1.14.13
+    uses: fish-shop/workflows/.github/workflows/openssf-scorecard.yml@63d32facd513f5dbe37f24338592c6895300450e # v1.14.14

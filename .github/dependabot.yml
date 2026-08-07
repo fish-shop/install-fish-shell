@@ -6,6 +6,9 @@ updates:
       interval: "daily"
     assignees:
       - "marcransome"
+    cooldown:
+      exclude:
+        - "fish-shop/*"
     groups:
       version-updates:
         applies-to: "version-updates"

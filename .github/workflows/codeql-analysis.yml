@@ -17,4 +17,4 @@ jobs:
     name: CodeQL Analysis
     permissions:
       security-events: write
-    uses: fish-shop/workflows/.github/workflows/codeql-analysis.yml@109613a6626e35f9f5fb69d7f530744cad7bed86 # v1.14.22
+    uses: fish-shop/workflows/.github/workflows/codeql-analysis.yml@c81fa354baef57927430e24b14f2e467b55bd231 # v1.14.23
